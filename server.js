@@ -6,7 +6,7 @@ import authRoutes from "./routes/authRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoute.js";
 import path from "path";
-import {fileUrlToPath} from "url"
+import { fileUrlToPath } from "url"
 
 import cors from "cors";
 import connectDB from "./config/db.js";
