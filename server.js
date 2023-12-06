@@ -6,9 +6,13 @@ import authRoutes from "./routes/authRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoute.js";
 import path from "path";
+import {fileUrlToPath} from "url"
 
-import connectDB from "./config/db.js";
 import cors from "cors";
+import connectDB from "./config/db.js";
+//es module fix
+const __filename =fileURLToPath(import.meta.url);
+const __dirname =path.dirname(__filename)
 
 //config env
 dotenv.config();
